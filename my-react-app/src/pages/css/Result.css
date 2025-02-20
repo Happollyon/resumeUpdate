@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #2A72B5; /* Strong Blue */
+    --secondary-color: #B3D4EF; /* Soft Sky Blue */
+    --accent-color: #FF7F50; /* Coral */
+    --background-color: #F4F9FF; /* Light Blue-White */
+    --text-color: #1E2A38; /* Dark Navy */
+    --card-color: #FFFFFF; /* Pure White */
+    --hover-color: #FFA07A; /* Light Coral */
+  }
+
+  /*
+    Use primary blue for key elements like the header, buttons, and links.
+    Accent coral should highlight interactive elements like call-to-action buttons.
+    Soft sky blue as a background for sections to break monotony.
+    Light blue-white for the page background to maintain readability.   
+  */
+  
+
+.Result{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

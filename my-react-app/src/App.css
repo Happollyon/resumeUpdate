@@ -29,3 +29,21 @@
   color: white;
  
 }
+
+.button_MarkToCv{
+  background-color: var(--primary-color);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position:absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.button_MarkToCv:hover{
+  background-color: var(--hover-color);
+}
