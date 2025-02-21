@@ -106,6 +106,7 @@ Experienced working in fast-paced environments, collaborating with global teams,
 ---
 
 `
+
 function MarkToCv() {
     const [markdown, setMarkdown] = useState(markdownStarter);
 
@@ -119,12 +120,16 @@ function MarkToCv() {
             <textarea className="textArea" value={markdown} onChange={handleMarkdownChange}> 
 
             </textarea>
-            
+            <div className="MarkToCv_preview" dangerouslySetInnerHTML={{ __html: markdown }}>
+                
+            </div>
+        
+{/*
             <ReactMarkdown className="MarkToCv_preview">
                 {markdown}
             </ReactMarkdown>
 
-            
+*/}          
         </div>
     </div>
     )
