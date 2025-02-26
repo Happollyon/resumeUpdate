@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import "./css/Result.css";
 import { useState } from "react";
 
-function Result() {
+function Result({result}) {
     const [markdown, setMarkdown] = useState("resi;t    ");
 
     function handleMarkdownChange(e) {
@@ -13,9 +13,9 @@ function Result() {
     return(
     <div className="Result">
         <div className="Result_container">
-            <ReactMarkdown className="Result_preview">
-                {markdown}
-            </ReactMarkdown>
+            <div className="Result_preview" dangerouslySetInnerHTML={{ __html: result }}>
+                
+            </div>
         </div>
     </div>
     )
